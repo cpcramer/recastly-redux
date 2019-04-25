@@ -29,12 +29,15 @@ class App extends React.Component {
       query: query
     };
 
-    this.props.searchYouTube(options, (videos) =>
+    this.props.searchYouTube(options, (videos) => {
+    console.log('serachyoutubevideos');
       this.setState({
         videos: videos,
         currentVideo: videos[0]
       })
-    );
+
+    });
+  
   }
 
   //TODO: swap out the React components below for the container components

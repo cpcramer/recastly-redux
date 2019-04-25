@@ -6,6 +6,7 @@ var currentVideoReducer = (state, action) => {
   //for every key in action object
   //update matching coptied states key to action keys val
   //return new copied state
+
   let newState = {};
   for (let key in state) {
     newState[key] = state[key];
